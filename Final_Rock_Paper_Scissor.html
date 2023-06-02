@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/rock-paper-scissors (2).png">
+    <link rel="stylesheet" href="Final-style.css">
+</head>
+<body>
+      <div class="board">
+          <div class="board-1">
+
+        <button class="circle" onclick="  playgame('rock'); " >
+            <img src="images/rock.png" class="move-img">
+        </button>
+        <button class="circle" onclick=" playgame('Paper');">
+            <img src="images/paper.png" class="move-img">
+        </button>
+        <button class="circle" onclick=" playgame('Scissor');">
+            <img src="images/scissors.png" class="move-img">
+        </button>
+           </div>
+          <div class="board-2">
+            <span class="Result "></span>
+            <button
+            class="square"
+            onclick="
+            score.wins = 0   
+            score.loses = 0   
+            score.ties= 0   
+            localStorage.removeItem('score');
+            updateScore();
+            document.querySelector('.Info').innerHTML= '';">
+            <img src="images/reset.png" class="move-img"></button>
+           </div>
+          <div class="final">
+
+           </div>
+          <div class="board-3">
+        <span class=" Info"></span> 
+          </div>
+    </div>
+    <p class="outer"><center>Coded by Piyush Saini</center></p>
+    <script src="Final-Js.js"></script>    
+</body>
+</html>
